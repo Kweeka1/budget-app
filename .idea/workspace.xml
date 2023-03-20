@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3edcf3d-eff3-4950-869a-daa14a160a9e" name="Changes" comment="" />
+    <list default="true" id="f3edcf3d-eff3-4950-869a-daa14a160a9e" name="Changes" comment="Fix linter errors">
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,8 +146,30 @@
       <option name="presentableId" value="Default" />
       <updated>1679301586813</updated>
       <workItem from="1679301608593" duration="339000" />
-      <workItem from="1679302117870" duration="2017000" />
+      <workItem from="1679302117870" duration="2425000" />
     </task>
+    <task id="LOCAL-00001" summary="Add project setup files">
+      <created>1679304298562</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679304298562</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add models">
+      <created>1679304320331</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679304320331</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix linter errors">
+      <created>1679304540308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679304540308</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,5 +185,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add project setup files" />
+    <MESSAGE value="Add models" />
+    <MESSAGE value="Fix linter errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix linter errors" />
   </component>
 </project>
