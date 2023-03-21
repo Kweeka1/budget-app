@@ -3,10 +3,10 @@ class CategoryController < ApplicationController
 
   def index
     @groups = Group
-                .select('groups.*, users.name AS username, SUM(expenses.amount) AS total_amount')
-                .left_joins(:user, :expenses)
-                .where(id: current_user.id)
-                .group('groups.id, users.id')
+      .select('groups.*, users.name AS username, SUM(expenses.amount) AS total_amount')
+      .left_joins(:user, :expenses)
+      .where(user: current_user)
+      .group('groups.id, users.id')
   end
 
   def new
@@ -27,7 +27,7 @@ class CategoryController < ApplicationController
     category = Group.find(params[:category_id])
 
     if category.destroy
-      redirect_to categories_path, status: :accepted
+      redirect_to categories_path
     else
       redirect_to categories_path, status: :bad_request
     end
