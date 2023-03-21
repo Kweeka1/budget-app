@@ -7,9 +7,9 @@
   <div class="flex flex-col p-4 gap-2 bg-slate-200 flex-1">
     <% @groups.each do |category| %>
       <div onclick="navigateToExpenses(<%= category.id %>)" class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
-        <div class="absolute top-2 right-2">
+        <%= link_to destroy_category_path(category.id), class: "absolute top-2 right-2", method: :delete do %>
           <i class="fa-solid fa-circle-xmark text-slate-500 text-xl"></i>
-        </div>
+        <% end %>
         <div class="w-[75px]">
           <img class="rounded-full w-[70px] h-[70px]" src="<%= category.icon %>" alt="Category icon preview" width="150" height="180">
         </div>
@@ -17,11 +17,11 @@
           <div class="flex pb-2 gap-1">
             <h3 class="capitalize text-md text-slate-800 font-[inter] leading-4"><%= category.name %></h3>
             <p class="leading-4">-</p>
-            <p class="capitalize text-sm text-slate-800 font-[inter] leading-4">By <%= category.user.name %></p>
+            <p class="capitalize text-sm text-slate-800 font-[inter] leading-4">By <%= category.username %></p>
           </div>
           <div>
             <p class="text-sm font-[inter] text-gray-700">Created at: <span class="text-slate-800"><%= category.created_at.strftime("%FT") %></span></p>
-            <p class="text-sm font-[inter] text-gray-700">Total expenses: <span class="text-red-700">$24.36</span></p>
+            <p class="text-sm font-[inter] text-gray-700">Total expenses: <span class="text-red-700">$<%= category.total_amount || 0 %></span></p>
           </div>
         </div>
       </div>

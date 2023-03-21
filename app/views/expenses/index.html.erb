@@ -1,37 +1,42 @@
 <%= stylesheet_link_tag 'carousel' %>
 <div class="bg-white w-full h-full flex flex-col">
   <div class="h-[7%] flex justify-between items-center p-1 bg-sky-700">
-    <i class="fa-solid fa-bars p-2 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
+    <%= link_to categories_path do %>
+      <i class="fa-solid fa-arrow-left p-1 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
+    <% end %>
     <h2 class="text-white text-lg">Expenses</h2>
     <i class="fa-solid fa-magnifying-glass p-2 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
   </div>
   <div class="h-[8%] flex justify-between items-center p-1 bg-sky-700">
     <div class="carousel">
-      <div id="item-1" class="item w-16 cursor-pointer text-sm text-center">
-        Most recent
-      </div>
       <div id="item-2" class="item left w-20 cursor-pointer text-sm text-center">
         Most ancient
       </div>
-      <div id="item-3" class="item active w-20 cursor-pointer text-sm text-center">
-        Most expensive
+      <div id="item-3" class="item active w-16 cursor-pointer text-sm text-center">
+        Most recent
       </div>
       <div id="item-4" class="item right w-20 cursor-pointer text-sm text-center">
         Most cheapest
       </div>
+      <div id="item-1" class="item w-20 cursor-pointer text-sm text-center">
+        Most expensive
+      </div>
     </div>
   </div>
   <div class="flex flex-col p-4 gap-2 bg-slate-200 flex-1">
-    <% @expenses_groups.expense.each do |expense| %>
-      <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
+    <% @expenses.each do |expense| %>
+      <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative expense-item">
+        <%= form_with(url: destroy_expense_path(@group_id, expense.id), class: "absolute top-2 right-2") do |form| %>
+          <%= button_tag(type: "submit") do %>
+            <i class="fa-solid fa-circle-xmark text-slate-500 text-xl"></i>
+          <% end %>
+        <% end %>
         <div class="absolute top-2 right-2">
-          <i class="fa-solid fa-circle-xmark text-slate-500 text-xl"></i>
+
         </div>
         <div class="flex flex-col px-3">
           <div class="flex pb-2 gap-1">
             <h3 class="capitalize text-md text-slate-800 font-[inter] leading-4"><%= expense.name %></h3>
-            <p class="leading-4">-</p>
-            <p class="capitalize text-sm text-slate-800 font-[inter] leading-4">By <%= expense.user.name %></p>
           </div>
           <div>
             <p class="text-sm font-[inter] text-gray-700">Created at: <span class="text-slate-800"><%= expense.created_at.strftime("%FT") %></span></p>
@@ -42,7 +47,8 @@
     <% end %>
   </div>
   <div class="flex flex-col p-4 gap-2 bg-slate-100">
-    <%= link_to 'ADD EXPENSE', new_category_path, class: "text-center p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
+    <%= link_to 'ADD EXPENSE', new_expense_path, class: "text-center p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
   </div>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token, id: 'csrf-token' %>
 </div>
 <%= javascript_include_tag 'carousel' %>
