@@ -21,8 +21,28 @@
       </div>
     </div>
   </div>
-  <div class="h-[30%] flex flex-col p-4 gap-2">
-
+  <div class="flex flex-col p-4 gap-2 bg-slate-200 flex-1">
+    <% @expenses_groups.expense.each do |expense| %>
+      <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
+        <div class="absolute top-2 right-2">
+          <i class="fa-solid fa-circle-xmark text-slate-500 text-xl"></i>
+        </div>
+        <div class="flex flex-col px-3">
+          <div class="flex pb-2 gap-1">
+            <h3 class="capitalize text-md text-slate-800 font-[inter] leading-4"><%= expense.name %></h3>
+            <p class="leading-4">-</p>
+            <p class="capitalize text-sm text-slate-800 font-[inter] leading-4">By <%= expense.user.name %></p>
+          </div>
+          <div>
+            <p class="text-sm font-[inter] text-gray-700">Created at: <span class="text-slate-800"><%= expense.created_at.strftime("%FT") %></span></p>
+            <p class="text-sm font-[inter] text-gray-700">Amount: <span class="text-red-700">$<%= expense.amount %></span></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="flex flex-col p-4 gap-2 bg-slate-100">
+    <%= link_to 'ADD EXPENSE', new_category_path, class: "text-center p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
   </div>
 </div>
 <%= javascript_include_tag 'carousel' %>
