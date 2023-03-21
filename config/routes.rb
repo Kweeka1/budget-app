@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'categories', to: "category#index", as: "categories"
   get 'categories/new', to: "category#new", as: "new_category"
   post 'categories/create', to: "category#create", as: "create_category"
-  delete 'categories/:category_id/destroy', to: "category#destroy", as: 'destroy_category'
+  post 'categories/:category_id/destroy', to: "category#destroy", as: 'destroy_category'
 
   # Expenses
   get 'categories/:category_id/expenses', to: "expenses#index", as: 'expenses'
