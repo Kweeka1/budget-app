@@ -2,7 +2,11 @@ class CategoryController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @groups = current_user.groups
+    @groups = Group
+                .select('groups.*, users.name AS username, SUM(expenses.amount) AS total_amount')
+                .left_joins(:user, :expenses)
+                .where(id: current_user.id)
+                .group('groups.id, users.id')
   end
 
   def new
@@ -10,12 +14,22 @@ class CategoryController < ApplicationController
   end
 
   def create
-    @category = Group.new(category_params.merge(author_id: current_user.id))
+    @category = Group.new(category_params.merge(user: current_user))
 
     if @category.save!
       redirect_to categories_path
     else
       render :new, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    category = Group.find(params[:category_id])
+
+    if category.destroy
+      redirect_to categories_path, status: :accepted
+    else
+      redirect_to categories_path, status: :bad_request
     end
   end
 
