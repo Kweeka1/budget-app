@@ -2,17 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3edcf3d-eff3-4950-869a-daa14a160a9e" name="Changes" comment="Fix linter errors">
+      <change beforePath="$PROJECT_DIR$/.idea/budget-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/budget-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/expense.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/expense.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/group.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230320090310_add_user_ref_to_expense.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230320090310_add_user_ref_to_expense.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230320091848_add_user_ref_to_group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230320091848_add_user_ref_to_group.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="ERB File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,8 +51,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.selected.package.stylelint": "",
     "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true"
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Rails.Development: budget-app">
@@ -146,7 +173,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679301586813</updated>
       <workItem from="1679301608593" duration="339000" />
-      <workItem from="1679302117870" duration="2425000" />
+      <workItem from="1679302117870" duration="25087000" />
+      <workItem from="1679384294476" duration="2157000" />
     </task>
     <task id="LOCAL-00001" summary="Add project setup files">
       <created>1679304298562</created>
@@ -169,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679304540308</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix linter errors">
+      <created>1679304551969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679304551969</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
