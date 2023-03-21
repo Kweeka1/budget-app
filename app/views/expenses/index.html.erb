@@ -23,17 +23,14 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-col p-4 gap-2 bg-slate-200 flex-1">
+  <div style="overflow: scroll;overflow-x: hidden;" class="flex flex-col p-4 gap-2 bg-slate-200 flex-1">
     <% @expenses.each do |expense| %>
       <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative expense-item">
-        <%= form_with(url: destroy_expense_path(@group_id, expense.id), class: "absolute top-2 right-2") do |form| %>
+        <%= form_with(url: destroy_expense_path(@group_id, expense.id), class: "absolute top-2 right-2", method: :post) do %>
           <%= button_tag(type: "submit") do %>
             <i class="fa-solid fa-circle-xmark text-slate-500 text-xl"></i>
           <% end %>
         <% end %>
-        <div class="absolute top-2 right-2">
-
-        </div>
         <div class="flex flex-col px-3">
           <div class="flex pb-2 gap-1">
             <h3 class="capitalize text-md text-slate-800 font-[inter] leading-4"><%= expense.name %></h3>
@@ -49,6 +46,5 @@
   <div class="flex flex-col p-4 gap-2 bg-slate-100">
     <%= link_to 'ADD EXPENSE', new_expense_path, class: "text-center p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
   </div>
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token, id: 'csrf-token' %>
 </div>
 <%= javascript_include_tag 'carousel' %>
