@@ -8,6 +8,7 @@ class ExpensesController < ApplicationController
 
   def new
     @expense = Expense.new
+    @group_id = params[:category_id]
   end
 
   def create
@@ -25,7 +26,7 @@ class ExpensesController < ApplicationController
     expense = Expense.find(destroy_params[:expense_id])
 
     if expense.destroy
-      redirect_to expenses_path(destroy_params[:category_id]), status: :accepted
+      redirect_to expenses_path(destroy_params[:category_id])
     else
       redirect_to expenses_path(destroy_params[:category_id]), status: :bad_request
     end
