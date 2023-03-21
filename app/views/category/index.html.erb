@@ -1,0 +1,38 @@
+<div class="bg-white w-full h-full flex flex-col">
+  <div class="h-[10%] flex justify-between items-center p-1 bg-sky-700">
+    <i class="fa-solid fa-bars p-2 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
+    <h2 class="text-white text-lg">Categories</h2>
+    <i class="fa-solid fa-magnifying-glass p-2 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
+  </div>
+  <div class="flex flex-col p-4 gap-2 bg-slate-200 flex-1">
+    <% @groups.each do |category| %>
+      <div onclick="navigateToExpenses(<%= category.id %>)" class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
+        <div class="absolute top-2 right-2">
+          <i class="fa-solid fa-circle-xmark text-slate-500 text-xl"></i>
+        </div>
+        <div class="w-[75px]">
+          <img class="rounded-full w-[70px] h-[70px]" src="<%= category.icon %>" alt="Category icon preview" width="150" height="180">
+        </div>
+        <div class="flex flex-col px-3">
+          <div class="flex pb-2 gap-1">
+            <h3 class="capitalize text-md text-slate-800 font-[inter] leading-4"><%= category.name %></h3>
+            <p class="leading-4">-</p>
+            <p class="capitalize text-sm text-slate-800 font-[inter] leading-4">By <%= category.user.name %></p>
+          </div>
+          <div>
+            <p class="text-sm font-[inter] text-gray-700">Created at: <span class="text-slate-800"><%= category.created_at.strftime("%FT") %></span></p>
+            <p class="text-sm font-[inter] text-gray-700">Total expenses: <span class="text-red-700">$24.36</span></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="flex flex-col p-4 gap-2 bg-slate-100">
+    <%= link_to 'ADD CATEGORY', new_category_path, class: "text-center p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
+  </div>
+</div>
+<script>
+  function navigateToExpenses(id) {
+      window.location.href = window.location.href + `/${id}/expenses`
+  }
+</script>
