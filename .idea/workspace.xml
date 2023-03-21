@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3edcf3d-eff3-4950-869a-daa14a160a9e" name="Changes" comment="Fix linter errors">
+    <list default="true" id="f3edcf3d-eff3-4950-869a-daa14a160a9e" name="Changes" comment="Update file">
       <change beforePath="$PROJECT_DIR$/.idea/budget-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/budget-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/expense.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/expense.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/group.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230320090310_add_user_ref_to_expense.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230320090310_add_user_ref_to_expense.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230320091848_add_user_ref_to_group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230320091848_add_user_ref_to_group.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +161,7 @@
       <updated>1679301586813</updated>
       <workItem from="1679301608593" duration="339000" />
       <workItem from="1679302117870" duration="25087000" />
-      <workItem from="1679384294476" duration="2157000" />
+      <workItem from="1679384294476" duration="2767000" />
     </task>
     <task id="LOCAL-00001" summary="Add project setup files">
       <created>1679304298562</created>
@@ -204,7 +191,84 @@
       <option name="project" value="LOCAL" />
       <updated>1679304551969</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add controllers and views">
+      <created>1679386838272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386838272</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add relations">
+      <created>1679386877010</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386877010</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add configuration for letter opener">
+      <created>1679386896871</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386896871</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add tailwindcss gem">
+      <created>1679386911589</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386911589</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add user ref to groups and expenses">
+      <created>1679386929400</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386929400</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update view">
+      <created>1679386977481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386977481</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update routes">
+      <created>1679386990170</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386990170</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update schema">
+      <created>1679386997095</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386997095</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add fonts">
+      <created>1679387005353</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387005353</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add auth settings">
+      <created>1679387039845</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387039845</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update file">
+      <created>1679387065225</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387065225</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +289,17 @@
     <MESSAGE value="Add project setup files" />
     <MESSAGE value="Add models" />
     <MESSAGE value="Fix linter errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix linter errors" />
+    <MESSAGE value="Add controllers and views" />
+    <MESSAGE value="Add relations" />
+    <MESSAGE value="Add configuration for letter opener" />
+    <MESSAGE value="Add tailwindcss gem" />
+    <MESSAGE value="Add user ref to groups and expenses" />
+    <MESSAGE value="Update view" />
+    <MESSAGE value="Update routes" />
+    <MESSAGE value="Update schema" />
+    <MESSAGE value="Add fonts" />
+    <MESSAGE value="Add auth settings" />
+    <MESSAGE value="Update file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update file" />
   </component>
 </project>
