@@ -1,0 +1,22 @@
+<div class="bg-white w-full h-full flex flex-col">
+  <div class="h-[10%] flex justify-between items-center p-1 bg-sky-700">
+    <%= link_to categories_path do %>
+      <i class="fa-solid fa-arrow-left p-1 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
+    <% end %>
+    <h2 class="text-white text-lg">Category</h2>
+    <i class="fa-solid fa-magnifying-glass p-2 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
+  </div>
+  <%= form_with model: @category, url: create_category_path, class: "flex flex-col bg-slate-200 flex-1 justify-between", method: :post do |form| %>
+    <div class="flex flex-col gap-2 p-4">
+      <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
+        <%= form.text_field :name, placeholder: "Name", class: "w-[100%] rounded border-slate-300" %>
+      </div>
+      <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
+        <%= form.text_field :icon, placeholder: "Icon Url", class: "w-[100%] rounded border-slate-300" %>
+      </div>
+    </div>
+    <div class="flex flex-col p-4 gap-2 bg-slate-100">
+      <%= form.submit 'ADD NEW CATEGORY', class: "text-center cursor-pointer p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
+    </div>
+  <% end %>
+</div>

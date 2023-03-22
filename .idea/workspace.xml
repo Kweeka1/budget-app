@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3edcf3d-eff3-4950-869a-daa14a160a9e" name="Changes" comment="Fix linter errors">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+    <list default="true" id="f3edcf3d-eff3-4950-869a-daa14a160a9e" name="Changes" comment="Update file">
+      <change beforePath="$PROJECT_DIR$/.idea/budget-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/budget-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="ERB File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,8 +38,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.selected.package.stylelint": "",
     "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true"
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Rails.Development: budget-app">
@@ -146,7 +160,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679301586813</updated>
       <workItem from="1679301608593" duration="339000" />
-      <workItem from="1679302117870" duration="2425000" />
+      <workItem from="1679302117870" duration="25087000" />
+      <workItem from="1679384294476" duration="2767000" />
     </task>
     <task id="LOCAL-00001" summary="Add project setup files">
       <created>1679304298562</created>
@@ -169,7 +184,91 @@
       <option name="project" value="LOCAL" />
       <updated>1679304540308</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix linter errors">
+      <created>1679304551969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679304551969</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add controllers and views">
+      <created>1679386838272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386838272</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add relations">
+      <created>1679386877010</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386877010</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add configuration for letter opener">
+      <created>1679386896871</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386896871</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add tailwindcss gem">
+      <created>1679386911589</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386911589</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add user ref to groups and expenses">
+      <created>1679386929400</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386929400</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update view">
+      <created>1679386977481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386977481</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update routes">
+      <created>1679386990170</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386990170</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update schema">
+      <created>1679386997095</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386997095</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add fonts">
+      <created>1679387005353</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387005353</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add auth settings">
+      <created>1679387039845</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387039845</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update file">
+      <created>1679387065225</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679387065225</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +289,17 @@
     <MESSAGE value="Add project setup files" />
     <MESSAGE value="Add models" />
     <MESSAGE value="Fix linter errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix linter errors" />
+    <MESSAGE value="Add controllers and views" />
+    <MESSAGE value="Add relations" />
+    <MESSAGE value="Add configuration for letter opener" />
+    <MESSAGE value="Add tailwindcss gem" />
+    <MESSAGE value="Add user ref to groups and expenses" />
+    <MESSAGE value="Update view" />
+    <MESSAGE value="Update routes" />
+    <MESSAGE value="Update schema" />
+    <MESSAGE value="Add fonts" />
+    <MESSAGE value="Add auth settings" />
+    <MESSAGE value="Update file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update file" />
   </component>
 </project>

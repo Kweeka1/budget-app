@@ -1,0 +1,22 @@
+<div class="bg-slate-100 w-full h-full flex flex-col">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="h-[30%] bg-sky-700 flex w-100 justify-between items-center relative">
+      <%= link_to root_path do %>
+        <i class="fa-solid fa-arrow-left p-3 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
+      <% end %>
+      <h2 class="font-['inter'] text-slate-100 text-2xl text-center">LOGIN</h2>
+      <%= f.submit "Log in", class: "text-white p-2 cursor-pointer" %>
+    </div>
+    <div class="my-3 w-100 flex flex-col">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "px-5 py-2 w-100 border-0 border-y-[1px] border-slate-200", placeholder: "Email" %>
+      <%= f.password_field :password, autocomplete: "current-password", class: "px-5 py-2 w-100 border-0 border-b-[1px] border-slate-200", placeholder: "Password" %>
+    </div>
+  <% end %>
+  <div class="text-center text-slate-500 mb-3">
+    <%= render "devise/shared/forgot_password" %>
+  </div>
+  <div class="text-center text-red-500">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </div>
+</div>
