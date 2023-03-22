@@ -21,7 +21,7 @@
           </div>
           <div>
             <p class="text-sm font-[inter] text-gray-700">Created at: <span class="text-slate-800"><%= category.created_at.strftime("%FT") %></span></p>
-            <p class="text-sm font-[inter] text-gray-700">Total expenses: <span class="text-red-700">$<%= category.total_amount || 0 %></span></p>
+            <p class="text-sm font-[inter] text-gray-700">Total expenses: <span class="text-red-700">$<%= category.total_amount.to_f.truncate(2) || 0 %></span></p>
           </div>
         </div>
       </div>
