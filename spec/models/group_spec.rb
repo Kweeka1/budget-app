@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe 'Group' do
-
   let(:user1) { User.first }
 
   before do
@@ -9,9 +8,7 @@ describe 'Group' do
   end
 
   subject do
-    if user1.nil?
-      user1 = User.create(name: 'Peter', email: 'peter@gmail.com', encrypted_password: '123456')
-    end
+    user1 = User.create(name: 'Peter', email: 'peter@gmail.com', encrypted_password: '123456') if user1.nil?
     Group.new(name: 'School', icon: 'https://www.imgur.com/dA4D8aQ', author_id: user1.id)
   end
 

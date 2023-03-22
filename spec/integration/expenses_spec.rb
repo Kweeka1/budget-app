@@ -7,6 +7,7 @@ RSpec.describe 'Expenses', type: :system do
     user.save!
   end
 
+  # rubocop:disable Metrics/BlockLength
   context 'Read/Create expenses' do
     before do
       # Login
@@ -46,6 +47,7 @@ RSpec.describe 'Expenses', type: :system do
       expect(page).to have_content 'Books'
     end
   end
+  # rubocop:enable Metrics/BlockLength
 
   context 'Delete expenses' do
     before do
