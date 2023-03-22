@@ -1,5 +1,6 @@
 class ExpensesController < ApplicationController
   before_action :authenticate_user!
+  load_and_authorize_resource
 
   def index
     @expenses = Group.find(params[:category_id]).expenses.order(created_at: :desc)
