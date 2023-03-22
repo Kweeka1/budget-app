@@ -14,7 +14,7 @@ class ExpensesController < ApplicationController
 
   def create
     expense = Expense.new(expense_params.merge(user: current_user))
-    expense.groups << Group.find(params[:category_id])
+    expense.groups << Group.find_by(name: params[:category])
 
     if expense.save
       redirect_to expenses_path(params[:category_id])
@@ -36,7 +36,7 @@ class ExpensesController < ApplicationController
   private
 
   def expense_params
-    params.require(:expense).permit(:name, :amount)
+    params.require(:expense).permit(:name, :amount, :category)
   end
 
   def destroy_params
