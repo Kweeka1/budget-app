@@ -8,6 +8,7 @@ class ExpensesController < ApplicationController
 
   def new
     @expense = Expense.new
+    @groups = Group.select('groups.name').pluck(:name)
     @group_id = params[:category_id]
   end
 
