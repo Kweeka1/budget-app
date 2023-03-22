@@ -6,7 +6,7 @@
     <h2 class="text-white text-lg">Category</h2>
     <i class="fa-solid fa-magnifying-glass p-2 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
   </div>
-  <%= form_with model: @category, url: create_category_path, class: "flex flex-col bg-slate-200 flex-1 justify-between", method: :post do |form| %>
+  <%= form_with model: @category, url: create_category_path, id: 'new_category', class: "flex flex-col bg-slate-200 flex-1 justify-between", method: :post do |form| %>
     <div class="flex flex-col gap-2 p-4">
       <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
         <%= form.text_field :name, placeholder: "Name", class: "w-[100%] rounded border-slate-300" %>
