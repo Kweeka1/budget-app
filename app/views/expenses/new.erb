@@ -14,9 +14,12 @@
       <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
         <%= form.text_field :amount, placeholder: "Amount", class: "w-[100%] rounded border-slate-300" %>
       </div>
+      <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
+        <%= select_tag "category", options_for_select(@groups), id: "select", class: "w-[100%] rounded border-slate-300" %>
+      </div>
     </div>
     <div class="flex flex-col p-4 gap-2 bg-slate-100">
-      <%= form.submit 'ADD NEW CATEGORY', class: "text-center cursor-pointer p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
+      <%= form.submit 'ADD NEW EXPENSE', class: "text-center cursor-pointer p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
     </div>
   <% end %>
 </div>
