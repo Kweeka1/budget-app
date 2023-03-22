@@ -15,6 +15,7 @@ class CategoryController < ApplicationController
 
   def create
     @category = Group.new(category_params.merge(user: current_user))
+    authorize! :create, @category
 
     if @category.save!
       redirect_to categories_path
@@ -25,6 +26,7 @@ class CategoryController < ApplicationController
 
   def destroy
     category = Group.find(params[:category_id])
+    authorize! :delete, category
 
     if category.destroy
       redirect_to categories_path
