@@ -3,13 +3,13 @@ class ExpensesController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @expenses = Group.find(params[:category_id]).expenses.order(created_at: :desc)
+    @expenses = Group.find(params[:category_id]).expenses.includes(:user).order(created_at: :desc)
     @group_id = params[:category_id]
   end
 
   def new
     @expense = Expense.new
-    @groups = Group.select('groups.name').pluck(:name)
+    @groups = Group.select('groups.name').where(user: current_user).pluck(:name)
     @group_id = params[:category_id]
   end
 

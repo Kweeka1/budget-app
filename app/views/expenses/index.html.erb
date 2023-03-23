@@ -5,7 +5,7 @@
       <i class="fa-solid fa-arrow-left p-1 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
     <% end %>
     <h2 class="text-white text-lg">Expenses: $<%= sum_amounts(@expenses).truncate(2) %></h2>
-    <i class="fa-solid fa-magnifying-glass p-2 cursor-pointer text-3xl text-white ease-in duration-200 hover:text-slate-300"></i>
+    <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "text-sm pr-1 text-white" %>
   </div>
   <div class="h-[8%] flex justify-between items-center p-1 bg-sky-700">
     <div class="carousel">
