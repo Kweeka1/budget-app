@@ -14,12 +14,14 @@ class ExpensesController < ApplicationController
   end
 
   def create
-    expense = Expense.new(expense_params.merge(user: current_user))
-    expense.groups << Group.find_by(name: params[:category])
+    @expense = Expense.new(expense_params.merge(user: current_user))
+    @expense.groups << Group.find_by(name: params[:category])
 
-    if expense.save
+    if @expense.save
       redirect_to expenses_path(params[:category_id])
     else
+      @groups = Group.select('groups.name').where(user: current_user).pluck(:name)
+      @group_id = params[:category_id]
       render :new, status: :unprocessable_entity
     end
   end
