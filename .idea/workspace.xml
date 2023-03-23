@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3edcf3d-eff3-4950-869a-daa14a160a9e" name="Changes" comment="Add integration specs">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb10a96c-9942-4321-8532-0ebe96ad6c40.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb10a96c-9942-4321-8532-0ebe96ad6c40.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/expenses_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/expenses_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/category/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/category/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/category/new.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/category/new.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/expenses/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/expenses/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/expenses/new.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/expenses/new.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/expenses/show.html.erb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,6 +360,7 @@
       <workItem from="1679301608593" duration="339000" />
       <workItem from="1679302117870" duration="25087000" />
       <workItem from="1679384294476" duration="2767000" />
+      <workItem from="1679566671543" duration="649000" />
     </task>
     <task id="LOCAL-00001" summary="Add project setup files">
       <created>1679304298562</created>
