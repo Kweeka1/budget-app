@@ -17,9 +17,26 @@
       <div class="p-2 rounded ease-in duration-200 bg-slate-300 cursor-pointer flex relative">
         <%= select_tag "category", options_for_select(@groups), id: "select", class: "w-[100%] rounded border-slate-300" %>
       </div>
+      <div class="p-3">
+        <% if @expense.errors.any? %>
+          <ul>
+            <% @expense.errors.full_messages.each do |message| %>
+              <li class="text-red-600"><%= message %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
     </div>
     <div class="flex flex-col p-4 gap-2 bg-slate-100">
       <%= form.submit 'ADD NEW EXPENSE', class: "text-center cursor-pointer p-4 bg-lime-700 rounded text-white ease-in duration-200 hover:bg-lime-800" %>
     </div>
   <% end %>
 </div>
+<style>
+  .field_with_errors {
+    width: 100%
+  }
+  .field_with_errors > input {
+    width: 100%
+  }
+</style>
