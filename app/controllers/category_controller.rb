@@ -17,7 +17,7 @@ class CategoryController < ApplicationController
     @category = Group.new(category_params.merge(user: current_user))
     authorize! :create, @category
 
-    if @category.save!
+    if @category.save
       redirect_to categories_path
     else
       render :new, status: :unprocessable_entity
