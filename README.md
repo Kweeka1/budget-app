@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://spendwise.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,7 +117,23 @@ To run the project, execute the following command:
 
 ### Run tests
 
-To run tests, run the following command:
+To run tests, follow the next steps:
+
+- First, Create a new file at root directory called `.env`. then add the following lines inside:
+
+```sh
+RAILS_DATABASE_USER=<your postgresql username>
+RAILS_DATABASE_PASSWORD=<your postgresql password>
+```
+
+- Example:
+
+```sh
+RAILS_DATABASE_USER=admin
+RAILS_DATABASE_PASSWORD=12345678
+```
+
+- Now, you can run tests by executing the following command:
 
 ```sh
   bundle exec rspec spec
